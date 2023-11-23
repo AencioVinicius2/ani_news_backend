@@ -3,8 +3,6 @@ import HomeController from "../controllers/HomeController.js";
 
 const router = new Router();
 
-router.get("/", ((req, res) => {
-  res.send('Olá, mundo!');
-}));
+router.get("/", HomeController.index);
 
 export default router;
